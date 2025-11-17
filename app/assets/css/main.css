@@ -1,3 +1,7 @@
+:root {
+	--colorBlue: #2563eb;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,4 +50,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 700;
 }

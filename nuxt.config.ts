@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   modules: ['@nuxtjs/supabase'],
   supabase: {
+    redirectOptions: {
+      login: '/auth/login',
+      callback: '/auth/callback'
+    },
     cookieOptions: {
       secure: process.env.NODE_ENV === 'production'
     },
