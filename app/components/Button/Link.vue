@@ -1,6 +1,11 @@
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{
+    title: string
+  }>(), {})
+</script>
 <template>
   <button>
-    title
+    <span>{{ title }}</span>    
   </button>
 </template>
 <style scoped>
@@ -11,5 +16,10 @@
     outline: none;
     font-weight: 700;
     cursor: pointer;
+  }
+  button:hover {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1px;
   }
 </style>

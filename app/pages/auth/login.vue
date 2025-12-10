@@ -25,7 +25,22 @@
           <InputRegular placeholder="Enter your email" type="mail" />          
           <span>Password</span>
           <InputRegular placeholder="Enter your password" type="password" :secureText="isSecurePassword" @click:secureText="changeSecurePassword" />
-        </div>      
+        </div>
+        <div class="container-grid-column-right_second_actions">
+          <div class="container-grid-column-right_second_actions_remember-me">
+            <input type="checkbox"/>
+            <span>Remember me</span>
+          </div>
+          <ButtonLink title='Forgot password?' />
+        </div>
+        <ButtonRegular title="Sign In" />
+        <div>
+          <span>Don't have an account?</span>
+          <ButtonLink title="Sign Up" />
+        </div>
+        <div class="container-grid-column-right_tyc">
+          <ButtonTag>Terms of Service · Privacy Policy</ButtonTag>          
+        </div>
       </div>
     </div>
   </div>
@@ -85,5 +100,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .container-grid-column-right_second_actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-grid-column-right_second_actions_remember-me {
+    display: flex;
+    gap: 10px;
+  }
+  .container-grid-column-right_tyc {
+    text-align: center;
   }
 </style>

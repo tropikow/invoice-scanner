@@ -30,19 +30,19 @@
     border: 1px solid #d1d5db;
     border-radius: 5px;
     overflow: hidden;
-    padding: 5px;
+    padding: 15px;
   }
   .input-container > input {    
     width: 100%;
     height: 100%;
     border: none;
-    outline: none;      
+    outline: none;    
   }
   .input-container > input::placeholder,
   textarea::placeholder {
     color: #6b7280;
     font-weight: 400;    
-    font-size: 12px;
+    font-size: var(--font-medium);
   }
   .icon-container {
     cursor: pointer;
