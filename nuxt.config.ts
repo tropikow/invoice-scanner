@@ -7,8 +7,9 @@ export default defineNuxtConfig({
   supabase: {
     redirectOptions: {
       login: '/auth/login',
-      callback: '/auth/callback'
-    },
+      callback: '/auth/callback',
+      exclude: ['/auth/signup']
+    },    
     cookieOptions: {
       secure: process.env.NODE_ENV === 'production'
     },

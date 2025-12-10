@@ -1,11 +1,14 @@
 <script setup lang="ts">
   const props = withDefaults(defineProps<{
-    title: string
+    title: string;
+    redirectTo: string;
   }>(), {})
 </script>
 <template>
   <button>
-    <span>{{ title }}</span>    
+    <NuxtLink :to="redirectTo">
+      <span>{{ title }}</span>    
+    </NuxtLink>
   </button>
 </template>
 <style scoped>

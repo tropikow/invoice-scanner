@@ -1,10 +1,17 @@
 <script setup lang="ts">
-  
+  interface Props {
+    to: string;
+  }
+  const props = defineProps([
+    'redirectTo'
+  ])  
 </script>
 <template>
   <div>
     <span>
-      <slot />
+      <NuxtLink :to="redirectTo">
+        <slot />
+      </NuxtLink>
     </span>
   </div>
 </template>

@@ -36,7 +36,7 @@
         <ButtonRegular title="Sign In" />
         <div>
           <span>Don't have an account?</span>
-          <ButtonLink title="Sign Up" />
+          <ButtonLink title="Sign Up" redirectTo="/auth/signup" />
         </div>
         <div class="container-grid-column-right_tyc">
           <ButtonTag>Terms of Service · Privacy Policy</ButtonTag>          
